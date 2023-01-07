@@ -11,7 +11,7 @@ main:
 	
 loop:	
 	addi $t1,$t1,1
-	lb $t4, 0($t1)  #arrayin yeni elmkontrol etmek icin yeni bir reg atıyoruz. t4 is new elm
+	lb $t4, 0($t1)  
 	beq $t4,$zero,save
 	addi $t0,$t0,1 # i++
 	bge $t4,$t3,loop  #bge R1, R2, label If (R1 ≥ R2) goto label, else continue
